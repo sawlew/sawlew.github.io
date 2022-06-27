@@ -48,11 +48,13 @@ main{
 .item-a{
     background-color: rgb(218, 64, 18);
     grid-area: a;
+    block-size: 4em;
 }
 
 .item-b{
     background-color: rgb(223, 148, 8);
     grid-area: b;
+    block-size: 4em;
 }
 
 .item-c{
