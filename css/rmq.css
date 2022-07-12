@@ -108,5 +108,19 @@ input{
         background-color: hsl(0, 100%, 74%);
         background-image: url("../img/mobile.png");
       }
+      .container{
+        width: 80%;
+      }
+      .intro{
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .intro h1{
+        padding-top: 100px;
+        padding-left: 30px;
+
+      }
     
 }

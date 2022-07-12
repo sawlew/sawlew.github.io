@@ -1,11 +1,12 @@
 * {
   margin: 0;
+  border: 0;
   box-sizing: border-box;
 }
 
 main {
-  background-image: url("img/bg-hero-desktop.svg");
-  background-color: #edfbfe;
+  background: url("../img/bg-hero-desktop.svg");
+  background-color: hsl(193, 100%, 96%);
 }
 
 .header {
@@ -198,71 +199,210 @@ main {
 footer {
   background-color: #00252e;
   color: white;
-}
-
-footer .foot1 img {
-  filter: brightness(0) invert(1);
-}
-
-.footer {
   display: flex;
   position: relative;
-  justify-content: space-between;
-  height: 50vh;
+  justify-content: space-around;
+  /* height: 50vh; */
   padding-top: 100px;
 }
 
-.detail td {
-  padding: 10px;
+
+#lolo{
+  width: 100%;
+  height: 5vh;
+  filter: brightness(0) invert(1);
+  margin-bottom: 50px;
 }
 
-.foot2 {
-  padding-top: 60px;
+.footer{
+  display: flex;
+  flex-direction: column;
 }
+
+.footer span{
+  margin-bottom: 20px;
+}
+
+.footer i{
+  margin-right: 10px;
+}
+
+.foot2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.foot2 a{
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+}
+
 
 .foot4{
-    padding-right: 40px;
+  margin-top: 90px;
 }
-
-.scm {
-  padding-top: 60px;
-  padding-bottom: 70px;
-}
-
-.scm td {
-  padding: 10px;
-}
-.foot4 p{
-    font-size: 10px;
-}
-.foot1{
-    padding-left: 40px;
-}
-
-.scm img{
-    filter: brightness(0) invert(1);
+.foot4 .scm{
+  width: 50%;
+  filter: invert(1);
+  margin-bottom: 100px;
 }
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    main {
+      background-image: url("../img/bg-hero-mobile.svg");
+      background-color: hsl(193, 100%, 96%);
+    }
+    .header{
+      display: flex;
+      justify-content:space-between;
+      padding-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 90px;
+    }
+    .header img{
+      padding: 0;
+      width: 100px;
+    }
+    .header .item-b {
+      padding: 0;
+      margin: 0;
+    }
+    .header button{
+      width: 150px;
+      height: 30px;
+    }
     .container-0{
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin: 0px;
+      padding: 0;
+      text-align: center;
+    }
+    .item-c{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .item-c h1{
+      margin: 0px 0px 0px 0px;
+      padding: 0px 10px 40px 10px;
+      text-align: center;
+    }
+    .item-c p{
+      margin: 0px 0px 0px 0px;
+      padding: 0px 30px 40px 30px;
+    }
+    .container-0 .item-d img{
+      margin: 0;
+      padding: 40px 30px 30px 30px;
     }
     .container-1{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 90%;
+        margin-top: 40px;
     }
-    .container-2{
-        flex-direction: column;
+    .container-1 img{
+      padding-top: 40px;
     }
 
-    .container-3{
+    .container-1 .item-e{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container-1 .item-e p{
+      padding: 0px 30px 40px 30px;
+
+    }
+
+    .container-2{
         flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .container-2 img{
+      padding-top: 40px;
+    }
+    .container-2 .item-g{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container-2 .item-g p{
+      padding: 0px 30px 40px 30px;
+      width: 100%;
+    }
+
+
+    .container-3{
+        flex-direction: column-reverse;
+        justify-content: center;
+        position: relative;
+        width: 90%;
+    }
+
+    .container-3 img{
+      padding-top: 40px;
+    }
+    .container-3 .item-h{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container-3 .item-h p{
+      padding: 0px 30px 40px 30px;
+      width: 100%;
+    }
+
+    footer {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .ready button{
+      width: 80%;
+    }
+    .ready{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 5%;
+      top: 35%;
+      transform: translateY(-200%);
+    }
+
+    #lolo{
+      width: 50%;
+      margin-top: 50px;
     }
     .footer{
-        flex-direction: column;
+      margin-left: 20px;
     }
-    main {
-        background-image: url("img/bg-hero-mobile.svg");
-        background-color: #edfbfe;
-      }
+    .foot2{
+      margin-left: 20px;
+    }
+    .foot4 .scm{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      padding-bottom: 20px;
+    }
+    .foot4 p{
+      text-align: center;
+
+    }
+
+
 }
