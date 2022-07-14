@@ -58,6 +58,7 @@ main {
   border: 1px #ff51c0 solid;
   border-radius: 30px;
   background-color: #f81ca8;
+  color: #edfbfe;
 }
 
 .item-c button:active{
@@ -379,7 +380,7 @@ footer {
       margin-right: auto;
       position: absolute;
       left: 5%;
-      top: 35%;
+      top: 40%;
       transform: translateY(-200%);
     }
 
@@ -393,7 +394,13 @@ footer {
     .foot2{
       margin-left: 20px;
     }
+
+    .lower{
+      margin-top: 0;
+    }
+
     .foot4 .scm{
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: auto;
@@ -403,6 +410,5 @@ footer {
       text-align: center;
 
     }
-
 
 }
