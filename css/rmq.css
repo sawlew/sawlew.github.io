@@ -106,14 +106,29 @@ input{
     color: hsl(0, 100%, 74%);
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     main{
       flex-direction: column;
+      height: auto;
     }
     body {
         background-color: hsl(0, 100%, 74%);
         background-image: url("../img/mobile.png");
       }
+
+      .intro{
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 60px;
+      }
+
+      .intro h1{
+        /* padding-top: 100px; */
+        padding-left: 30px;
+      }
+
       .container{
         width: 90%;
         margin-left: auto;
@@ -123,18 +138,6 @@ input{
 
       .form{
         border-bottom: outset hsl(246, 25%, 77%) 6px;
-      }
-
-      .intro{
-        width: 90%;
-        margin: 0;
-        text-align: center;
-        margin-bottom: 60px;
-      }
-
-      .intro h1{
-        /* padding-top: 100px; */
-        padding-left: 30px;
       }
     
 }
