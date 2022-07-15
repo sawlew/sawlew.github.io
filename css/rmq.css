@@ -60,6 +60,7 @@ main {
 .form {
   background-color: white;
   border-radius: 10px;
+  border-bottom: outset hsl(246, 25%, 77%) 6px;
 }
 table{
     padding: 30px;
@@ -117,7 +118,13 @@ input{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 100px;
       }
+
+      .form{
+        border-bottom: outset hsl(246, 25%, 77%) 6px;
+      }
+
       .intro{
         width: 90%;
         margin: 0;
@@ -126,7 +133,7 @@ input{
       }
 
       .intro h1{
-        padding-top: 100px;
+        /* padding-top: 100px; */
         padding-left: 30px;
       }
     
