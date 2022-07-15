@@ -109,7 +109,9 @@ input{
 @media only screen and (max-width: 600px) {
     main{
       flex-direction: column;
-      /* height: auto; */
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
     body {
         background-color: hsl(0, 100%, 74%);
