@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(198, 202, 202);
+}
+
 header h3{
     text-align: center;
     color: hsl(31, 77%, 52%);
@@ -22,7 +26,6 @@ header h3{
   }
 
 main{
-    background-color: rgb(198, 202, 202);
     display: flex;
     place-items: center;
     min-height: 100vh;
@@ -70,4 +73,21 @@ main{
 .item-e{
     background-color: rgb(6, 174, 216);
     grid-area: e;
+}
+
+
+
+@media (max-width: 600px){
+    .main{
+        flex-direction: column;
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e' ;
+
+        width: 60%;
+        margin: 50px auto 50px auto;
+    }
 }
